@@ -263,7 +263,7 @@ main {
   min-width: 320px;
   height: auto;
   padding: 20px 10px;
-  background-color: var(--warm-black);
+  background-color: var(--black);
 }
 
 .main-product-detail
@@ -298,6 +298,66 @@ main {
 .main-product-detail
 .product-detail__title p {
   margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-cards__container
+.product-detail__card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--warm-black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail__card 
+.icon-card {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.product-cards__container
+.clock {
+  background-image: url('./assets/icons/clock.svg');
+}
+
+.product-cards__container 
+.eye {
+  background-image: url('./assets/icons/eye.svg')
+}
+
+.product-cards__container
+.dollar {
+  background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+.product-cards__container
+.circle{
+  background-image: url('./assets/icons/check-circle.svg');
+}
+
+.product__card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product__card-body {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
