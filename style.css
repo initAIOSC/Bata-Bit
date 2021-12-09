@@ -264,7 +264,7 @@ main {
   min-width: 320px;
   height: auto;
   padding: 20px 10px;
-  background-color: var(--black);
+  background: radial-gradient(circle, rgba(247,147,26,1) 0%, rgba(247,147,26,1) 33%, rgba(32,30,28,1) 72%);
 }
 
 .main-product-detail
@@ -302,7 +302,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: #d0d0d0;
 }
 
 .product-cards__container
@@ -394,7 +394,7 @@ main {
   min-width: 288px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .main-plans-container
@@ -422,6 +422,18 @@ main {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
   margin: 0 30px;
+  padding: 0 15vw;
+}
+
+.main-plans-container
+.plans-container__slider::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+
+.main-plans-container
+.plans-container__slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
 }
 
 .main-plans-container
@@ -429,7 +441,7 @@ main {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 190px;
   max-width: 300px;
   height: 250px;
   margin: 50px 25px 0;
@@ -508,4 +520,40 @@ main {
   height: 20px;
   background-image: url('./assets/icons/orange-right-arrow.svg');
   vertical-align: text-bottom;
+}
+
+footer {
+  display: flex;
+  width: 100vw;
+  min-width: 320px;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li {
+  margin: 10px 0;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+.right img {
+  width: 90px;
+  height: 90px;
 }
